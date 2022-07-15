@@ -1,9 +1,8 @@
-// const http = require("http");
-const fs = require("fs");
 const express = require("express");
 var morgan = require("morgan");
 
 var expressLayouts = require("express-ejs-layouts");
+const { getContact } = require("./function/contactHandler");
 const app = express();
 const port = 3000;
 
@@ -22,9 +21,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  const file = fs.readFileSync("./public/data/contact.json", "utf8");
-
-  const contacts = JSON.parse(file);
+  const contacts = getContact();
 
   res.render("index", {
     name: "Feri Teja Kusuma",

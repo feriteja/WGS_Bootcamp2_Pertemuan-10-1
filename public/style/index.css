@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: gainsboro;
+  background-color: #fafafa;
 }
 
 nav {
@@ -13,7 +13,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px 20px 20px;
-  box-shadow: 2px 2px 2px #fafafa;
+  box-shadow: 2px 2px 2px #aaa;
   margin-bottom: 30px;
 }
 
@@ -53,7 +53,7 @@ nav {
 .contactList > li {
   margin-top: 20px;
   box-shadow: 1px 1px 2px 1px #888888;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   padding: 10px 20px;
   border-radius: 7px;
 }
